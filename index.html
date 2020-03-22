@@ -5,14 +5,31 @@
 	body {
 		background: #eeeeee;
 	}
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+	}
 	#header {
 		background: #eeeeee;
 		border-radius: 25px;
 		border: 2px solid #008000;
-		margin-left:5%;
-		margin-right: 5%;
+		margin-left:10%;
+		margin-right: 10%;
 		margin-top: 5%;
-		text-align: center;
+	}
+	.project {
+		background: #eeeeee;
+		border-radius: 25px;
+		border: 2px solid #008000;
+		margin-left:10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 10px;
+		text-align: left;
 	}
 </style>
 </head>
@@ -20,13 +37,15 @@
 <body>
 <div id="header"><h1>Angela Netzke's Programming Portfolio</h1></div>
 
-<div id="header">
-	<h3>Steganograpy</h3>
-	<h2>Language: Python</h2>
-	Steganography is hiding a message in a way that it is not obvious that a message have been encoded.
-	I find the subject to be very interesting so I decided to create a program using the concept of 
-	least significant bit encoding. For this project, I learned about manipulating images using Python's
-	PIL library.
+<div class="project">
+	<h2>Steganograpy</h2>
+	<p>
+		Steganography is hiding a message in a way that it is not obvious that a message have been encoded.
+		I find the subject to be very interesting so I decided to create a program using the concept of 
+		least significant bit encoding to encode an image inside another image. For this project, I learned
+		about manipulating images using Python's PIL library.
+	</p>
+	<strong><a href="https://github.com/angelanetzke/steganography">Python source code</a></strong>
 </div>
 
 </body>
