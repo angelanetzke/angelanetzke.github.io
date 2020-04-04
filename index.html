@@ -3,39 +3,37 @@
 <title>Angela Netzke</title>
 <style>
 	body {
-		background: #cccccc;
+		background: #004000;
 	}
-	h1 {
+	h1, h2, h4 {
 		text-align: center;
 	}
-	h2 {
-		text-align: center;
-	}
-	#header {
-		background: #eeeeee;
+	div {
+		background: #dddddd;
 		border-radius: 25px;
-		border: 2px solid #008000;
+		border: 2px solid #FFD700;
 		margin-left:15%;
 		margin-right: 15%;
-		margin-top: 5%;
-	}
-	.project {
-		background: #eeeeee;
-		border-radius: 25px;
-		border: 2px solid #008000;
-		margin-left:15%;
-		margin-right: 15%;
-		margin-top: 5%;
+		
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 10px;
+	}
+	#header {
+		margin-top: 2%;
+	}
+	.project {
+		margin-top: 5%;
 		text-align: left;
 	}
 </style>
 </head>
 
 <body>
-<div id="header"><h1>Angela Netzke's Programming Portfolio</h1></div>
+<div id="header">
+	<h1>Angela Netzke's Programming Portfolio</h1>-
+	<h4>angela.netzke@gmail.com</h4>
+</div>
 
 <div class="project">
 	<h2>Steganograpy</h2>
@@ -45,7 +43,20 @@
 		least significant bit encoding to encode an image inside another image. For this project, I learned
 		about manipulating images using Python's PIL library.
 	</p>
-	<strong><a href="https://github.com/angelanetzke/steganography">Python source code</a></strong>
+	<h4><a href="https://github.com/angelanetzke/steganography">Python source code</a></h4>
+</div>
+
+<div class="project">
+	<h2>Sudoku Solver</h2>
+	<p>
+		Sudoku puzzles are a very popular puzzle where the solver places numbers in squares so
+		each row, column, and region (a 3 x 3 grid) only contains one of each digit. I created a
+		sudoku solver using Visual C# in Microsoft Visual Studio. In this project, I expanded on what 
+		I have learned in my data strutures classes by developing my own data structure to handle
+		the values for each square of a sudoku puzzle. Solving the puzzle requires a data structure
+		where each square is contained in its own combination of row, column and region.
+	</p>
+	<h4><a href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
 </div>
 
 </body>
