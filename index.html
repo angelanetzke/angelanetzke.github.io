@@ -8,24 +8,30 @@
 	h1, h2, h3, h4 {
 		text-align: center;
 	}
-	div {
+	.header {
 		background: #dddddd;
 		border-radius: 25px;
 		border: 2px solid #FFD700;
+		margin-left:10%;
+		margin-right: 10%;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.project {
+		background: #dddddd;
+		border-radius: 25px;
+		border: 2px solid #FFD700;
+		margin-left:15%;
+		margin-right: 15%;
 		margin-top: 2%;
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 10px;
-	}
-	.header {
-		text-align: center;
-		margin-left:10%;
-		margin-right: 10%;
-	}
-	.project {
 		text-align: left;
-		margin-left:15%;
-		margin-right: 15%;
+	}
+	.column {
+		float:left;
+		width: 50%
 	}
 </style>
 </head>
@@ -36,90 +42,108 @@
 	<h4>angela.netzke@gmail.com</h4>
 </div>
 
-<div class="header">
-	<h2>Individual Projects</h2>
+<div class="column">
+
+	<div class="header">
+		<h2>Individual Projects</h2>
+	</div>
+
+	<div class="project">
+		<h3>Asteroids</h3>
+		<p>
+			In this project, I sharpened my C# skills by recreating the game Asteroids 
+			using the Unity game engine. One of the challenges of this project was 
+			handling the movement of the ship which continues to glide even when no 
+			buttons are being pushed, unlike the movement in most video games. The 
+			process of recreating a game required me to understand the requirements of
+			the project by experience, rather than have them stated and to create code
+			that satisfied those requirements.
+		</p>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/Asteroids">Unity project with C# scripts</a></h4>
+	</div>
+
+	<div class="project">
+		<h3>COVID-19 Infection Rates</h3>
+		<p>
+			The COVID ActNow website ( covidactnow.org ) provides data about the spread
+			of COVID-19. Using COVID ActNow's API, I created a Jupyter Notebook that
+			compares the infection rates of each state. My Notebook condenses data that
+			is found on multiple pages on the COVID ActNow website into one page.
+		</p>
+		<h4><a target="_blank" href="https://colab.research.google.com/drive/1quiL6s34_vO3Cs_gOMGjxM0fImyY1Dwe?usp=sharing">Jupyter Notebook</a></h4>
+	</div>
+
+	<div class="project">
+		<h3>Steganograpy</h3>
+		<p>
+			Steganography is hiding a message in a way that it is not obvious that a
+			message have been encoded. I find the subject to be very interesting so I
+			decided to create a program using the concept of least significant bit
+			encoding to encode an image inside another image. For this project, I
+			learned about how different methods of steganography work and then created
+			a program that implemented one of the algorithms I learned about.
+		</p>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/steganography">Python source code</a></h4>
+	</div>
+
+	<div class="project">
+		<h3>Sudoku Solver</h3>
+		<p>
+			Sudoku puzzles are a very popular puzzle where the solver places numbers in
+			squares so each row, column, and region (a 3 x 3 grid) only contains one of
+			each digit. I created a Sudoku solver using Visual C# in Microsoft Visual
+			Studio. In this project, I expanded on what I have learned in my data
+			structures classes by developing my own data structure to handle the values
+			for each square of a Sudoku puzzle. Solving the puzzle requires a data
+			structure where each square is contained in its own combination of row,
+			column and region. The challenge of this project was translating the
+			process of solving a Sudoku puzzle into code that a computer can understand.
+		</p>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
+	</div>
+
+	<div class="project">
+		<h3>Tic Tac Toe</h3>
+		<p>
+			For my Tic Tac Toe project, I implemented a simple computer opponent. It
+			will block the player when the player has two in a row and will make the
+			winning move when the computer has two in a row. For this project, I
+			practiced updating the state of the program based on user input and using
+			that state to determine the action the computer should take. I used JavaFX
+			to implement the GUI and used Eclipse as my IDE.
+		</p>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/TicTacToe">Java source code</a></h4>
+	</div>
+
 </div>
 
-<div class="project">
-	<h3>Asteroids</h3>
-	<p>
-		In this project, I sharpened my C# skills by recreating the game Asteroids 
-		using the Unity game engine. One of the challenges of this project was 
-		handling the movement of the ship which continues to glide even when no 
-		buttons are being pushed, unlike the movement in most video games. The 
-		process of recreating a game required me to understand the requirements of
-		the project by experience, rather than have them stated and to create code
-		that satisfied those requirements.
-	</p>
-	<h4><a href="https://github.com/angelanetzke/Asteroids">Unity project with C# scripts</a></h4>
-</div>
+<div class="column">
 
-<div class="project">
-	<h3>Steganograpy</h3>
-	<p>
-		Steganography is hiding a message in a way that it is not obvious that a
-		message have been encoded. I find the subject to be very interesting so I
-		decided to create a program using the concept of least significant bit
-		encoding to encode an image inside another image. For this project, I
-		learned about how different methods of steganography work and then created
-		a program that implemented one of the algorithms I learned about.
-	</p>
-	<h4><a href="https://github.com/angelanetzke/steganography">Python source code</a></h4>
-</div>
+	<div class="header">
+		<h2>Group Projects</h2>
+	</div>
 
-<div class="project">
-	<h3>Sudoku Solver</h3>
-	<p>
-		Sudoku puzzles are a very popular puzzle where the solver places numbers in
-		squares so each row, column, and region (a 3 x 3 grid) only contains one of
-		each digit. I created a Sudoku solver using Visual C# in Microsoft Visual
-		Studio. In this project, I expanded on what I have learned in my data
-		structures classes by developing my own data structure to handle the values
-		for each square of a Sudoku puzzle. Solving the puzzle requires a data
-		structure where each square is contained in its own combination of row,
-		column and region. The challenge of this project was translating the
-		process of solving a Sudoku puzzle into code that a computer can understand.
-	</p>
-	<h4><a href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
-</div>
+	<div class="project">
+		<h3>Secure Assess</h3>
+		<p>
+			As part of my senior project, I worked in a group of 8 people to develop
+			a mobile app that will keep a user informed about computer security issues
+			with a knowledge base and communication forum. The project was done
+			in React Native.
+		</p>
+	</div>
 
-<div class="project">
-	<h3>Tic Tac Toe</h3>
-	<p>
-		For my Tic Tac Toe project, I implemented a simple computer opponent. It
-		will block the player when the player has two in a row and will make the
-		winning move when the computer has two in a row. For this project, I
-		practiced updating the state of the program based on user input and using
-		that state to determine the action the computer should take. I used JavaFX
-		to implement the GUI and used Eclipse as my IDE.
-	</p>
-	<h4><a href="https://github.com/angelanetzke/TicTacToe">Java source code</a></h4>
-</div>
+	<div class="project">
+		<h3>Accessibility Exposure & Impact Score Project</h3>
+		<p>
+			As part of a software engineering class, I worked in a group of 5 people
+			to develop a website to help the California Department of Rehabilitation
+			evaluate the impact of improving accessibility of the department's systems.
+			The project was done in C#.
+		</p>
+	</div>
 
-<div class="header">
-	<h2>Group Projects</h2>
 </div>
-
-<div class="project">
-	<h3>Secure Assess</h3>
-	<p>
-		As part of my senior project, I worked in a group of 8 people to develop
-		a mobile app that will keep a user informed about computer security issues
-		with a knowledge base and communication forum. The project was done
-		in React Native.
-	</p>
-</div>
-
-<div class="project">
-	<h3>Accessibility Exposure & Impact Score Project</h3>
-	<p>
-		As part of a software engineering class, I worked in a group of 5 people
-		to develop a website to help the California Department of Rehabilitation
-		evaluate the impact of improving accessibility of the department's systems.
-		The project was done in C#.
-	</p>
-</div>
-
 
 </body>
 </html>
