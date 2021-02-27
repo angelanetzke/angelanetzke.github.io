@@ -8,7 +8,7 @@
 	h1, h2, h3, h4 {
 		text-align: center;
 	}
-	.header {
+	#topheader {
 		background: #dddddd;
 		border-radius: 25px;
 		border: 2px solid #000000;
@@ -17,13 +17,21 @@
 		margin-top: 10px;
 		text-align: center;
 	}
-	.project {
-		background: #dddddd;
+	.collection {
+		background: #cccccc;
 		border-radius: 25px;
 		border: 2px solid #000000;
 		margin-left: 10%;
 		margin-right: 10%;
-		margin-top: 2%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding: 15px;
+		text-align: center;
+	}
+	.project {
+		background: #eeeeee;
+		border-radius: 25px;
+		border: 2px solid #000000;
 		padding-left: 15px;
 		padding-right: 15px;
 		padding-bottom: 10px;
@@ -38,105 +46,106 @@
 </head>
 
 <body>
-<div class="header">
+<div id="topheader">
 	<h1>Angela Netzke's Programming Portfolio</h1>
 	<h4>angela.netzke@gmail.com</h4>
 </div>
 
 
-<div class="header">
+<div class="collection">
 	<h2>Individual Projects</h2>
-</div>
 
-<div class="project">
-	<h3>Asteroids</h3>
-	<p class="descpara">
-		In this project, I sharpened my C# skills by recreating the game Asteroids 
-		using the Unity game engine. One of the challenges of this project was 
-		handling the movement of the ship which continues to glide even when no 
-		buttons are being pushed, unlike the movement in most video games. The 
-		process of recreating a game required me to understand the requirements of
-		the project by experience, rather than have them stated and to create code
-		that satisfied those requirements.
-	</p>
-	<div class="videodiv">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/1aZ72pqUXOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="project">
+		<h3>Asteroids</h3>
+		<p class="descpara">
+			In this project, I sharpened my C# skills by recreating the game Asteroids 
+			using the Unity game engine. One of the challenges of this project was 
+			handling the movement of the ship which continues to glide even when no 
+			buttons are being pushed, unlike the movement in most video games. The 
+			process of recreating a game required me to understand the requirements of
+			the project by experience, rather than have them stated and to create code
+			that satisfied those requirements.
+		</p>
+		<div class="videodiv">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1aZ72pqUXOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/Asteroids">Unity project with C# scripts</a></h4>
 	</div>
-	<h4><a target="_blank" href="https://github.com/angelanetzke/Asteroids">Unity project with C# scripts</a></h4>
-</div>
 
-<div class="project">
-	<h3>COVID-19 Infection Rates</h3>
-	<p class="descpara">
-		The <a target="_blank" href="https://covidactnow.org/"> 
-		COVID ActNow</a> website provides data about the spread
-		of COVID-19. Using COVID ActNow's API, I created a Google Colab Notebook that
-		compares the infection rates of each state. My Notebook condenses data that
-		is found on multiple pages on the COVID ActNow website into one page.
-	</p>
-	<h4><a target="_blank" href="https://colab.research.google.com/drive/1quiL6s34_vO3Cs_gOMGjxM0fImyY1Dwe?usp=sharing">Colab Notebook with Python source code</a></h4>
-</div>
-
-<div class="project">
-	<h3>Steganograpy</h3>
-	<p class="descpara">
-		Steganography is hiding a message in a way that it is not obvious that a
-		message have been encoded. I find the subject to be very interesting so I
-		decided to create a program using the concept of least significant bit
-		encoding to encode an image inside another image. For this project, I
-		learned about how different methods of steganography work and then created
-		a program that implemented one of the algorithms I learned about.
-	</p>
-	<div class="videodiv">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/OXNlGpN8fI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="project">
+		<h3>COVID-19 Infection Rates</h3>
+		<p class="descpara">
+			The <a target="_blank" href="https://covidactnow.org/"> 
+			COVID ActNow</a> website provides data about the spread
+			of COVID-19. Using COVID ActNow's API, I created a Google Colab Notebook that
+			compares the infection rates of each state. My Notebook condenses data that
+			is found on multiple pages on the COVID ActNow website into one page.
+		</p>
+		<h4><a target="_blank" href="https://colab.research.google.com/drive/1quiL6s34_vO3Cs_gOMGjxM0fImyY1Dwe?usp=sharing">Colab Notebook with Python source code</a></h4>
 	</div>
-	<h4><a target="_blank" href="https://github.com/angelanetzke/steganography">Python source code</a></h4>
-</div>
 
-<div class="project">
-	<h3>Sudoku Solver</h3>
-	<p class="descpara">
-		Sudoku puzzles are a very popular puzzle where the solver places numbers in
-		squares so each row, column, and region (a 3 x 3 grid) only contains one of
-		each digit. I created a Sudoku solver using Visual C# in Microsoft Visual
-		Studio. In this project, I expanded on what I have learned in my data
-		structures classes by developing my own data structure to handle the values
-		for each square of a Sudoku puzzle. Solving the puzzle requires a data
-		structure where each square is contained in its own combination of row,
-		column and region. The challenge of this project was translating the
-		process of solving a Sudoku puzzle into code that a computer can understand.
-	</p>
-	<div class="videodiv">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/TQfDMFV5NDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="project">
+		<h3>Steganograpy</h3>
+		<p class="descpara">
+			Steganography is hiding a message in a way that it is not obvious that a
+			message have been encoded. I find the subject to be very interesting so I
+			decided to create a program using the concept of least significant bit
+			encoding to encode an image inside another image. For this project, I
+			learned about how different methods of steganography work and then created
+			a program that implemented one of the algorithms I learned about.
+		</p>
+		<div class="videodiv">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/OXNlGpN8fI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/steganography">Python source code</a></h4>
 	</div>
-	<h4><a target="_blank" href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
-</div>
 
-<div class="header">
-	<h2>Group Projects</h2>
-</div>
-
-<div class="project">
-	<h3>Accessibility Exposure & Impact Score Project</h3>
-	<p class="descpara">
-		As part of a software engineering class, I worked in a group of 5 people
-		to develop a website to help the California Department of Rehabilitation
-		evaluate the impact of improving accessibility of the department's systems.
-		The project was done in C#.
-	</p>
-</div>
-
-<div class="project">
-	<h3>Secure Assess</h3>
-	<p class="descpara">
-		As part of my senior project, I worked in a group of 8 people to develop
-		a mobile app that will keep a user informed about computer security issues
-		with a knowledge base and communication forum. The project was done
-		in React Native.
-	</p>
-	<div class="videodiv">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/lxWsBu7gLso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="project">
+		<h3>Sudoku Solver</h3>
+		<p class="descpara">
+			Sudoku puzzles are a very popular puzzle where the solver places numbers in
+			squares so each row, column, and region (a 3 x 3 grid) only contains one of
+			each digit. I created a Sudoku solver using Visual C# in Microsoft Visual
+			Studio. In this project, I expanded on what I have learned in my data
+			structures classes by developing my own data structure to handle the values
+			for each square of a Sudoku puzzle. Solving the puzzle requires a data
+			structure where each square is contained in its own combination of row,
+			column and region. The challenge of this project was translating the
+			process of solving a Sudoku puzzle into code that a computer can understand.
+		</p>
+		<div class="videodiv">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/TQfDMFV5NDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
 	</div>
+</div>
+
+<div class="collection">
+		<h2>Group Projects</h2>
+
+	<div class="project">
+		<h3>Accessibility Exposure & Impact Score Project</h3>
+		<p class="descpara">
+			As part of a software engineering class, I worked in a group of 5 people
+			to develop a website to help the California Department of Rehabilitation
+			evaluate the impact of improving accessibility of the department's systems.
+			The project was done in C#.
+		</p>
+	</div>
+
+	<div class="project">
+		<h3>Secure Assess</h3>
+		<p class="descpara">
+			As part of my senior project, I worked in a group of 8 people to develop
+			a mobile app that will keep a user informed about computer security issues
+			with a knowledge base and communication forum. The project was done
+			in React Native.
+		</p>
+		<div class="videodiv">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/lxWsBu7gLso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
 </div>
 
 
