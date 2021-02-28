@@ -29,6 +29,13 @@
 		padding-right: 15px;
 		text-align: center;
 	}
+	.imagediv {
+		max-width: 400px;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.project {
 		background: #eeeeee;
 		border-radius: 25px;
@@ -84,6 +91,22 @@
 			is found on multiple pages on the COVID ActNow website into one page.
 		</p>
 		<h4><a target="_blank" href="https://colab.research.google.com/drive/1quiL6s34_vO3Cs_gOMGjxM0fImyY1Dwe?usp=sharing">Colab Notebook with Python source code</a></h4>
+	</div>
+	
+	<div class="project">
+		<h3>Path Finder</h3>
+		<p class="descpara">
+			For this project, I implemented the A* algorithm to navigate a field of obstacles.
+			For each node in the field, I calculated the Manhattan distance to the endpoint in
+			order to determine which node to place at the top of the priority queue. The weight 
+			of each segment in the path is equal and the program avoids bias in the direction
+			of travel by randomly choosing among nodes the could eqaully be placed at the top
+			of the queue.
+		</p>
+		<a target="_blank" href="pathfinder.png">
+			<img src="pathfinder.png" class="imagediv">
+		</a>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/SudokuSolver">Visual C# project</a></h4>
 	</div>
 
 	<div class="project">
