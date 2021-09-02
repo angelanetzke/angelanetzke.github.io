@@ -29,7 +29,7 @@
 		padding-right: 15px;
 		text-align: center;
 	}
-	.imagediv {
+	.image {
 		max-width: 400px;
 		height: auto;
 		display: block;
@@ -82,6 +82,24 @@
 	</div>
 	
 	<div class="project">
+		<h3>COVID-19 Infection Rates</h3>
+		<p class="descpara">
+			This project is a web project that uses Java on the back end and the d3.js
+			javascript library on the front end. Pulling data from the
+			<a href="https://covidactnow.org">Covid ActNow</a>
+			website, I generated a color-coded map that indicates the current infection rate
+			of each state. I implemented a cache system so that if an API call was made in
+			the last six hours, the back end will return the cached version of the data
+			rather than make another API call.
+		</p>
+		<a target="_blank" href="infectionrates.png">
+			<img src="infectionrates.png" class="image">
+		</a>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/InfectionRatesFrontEnd">front end javascript</a></h4>
+		<h4><a target="_blank" href="https://github.com/angelanetzke/InfectionRatesBackEnd">back end Java</a></h4>
+	</div>
+	
+	<div class="project">
 		<h3>Path Finder</h3>
 		<p class="descpara">
 			For this project, I implemented the A* algorithm to navigate a field of obstacles.
@@ -92,7 +110,7 @@
 			of the queue.
 		</p>
 		<a target="_blank" href="pathfinder.png">
-			<img src="pathfinder.png" class="imagediv">
+			<img src="pathfinder.png" class="image">
 		</a>
 		<h4><a target="_blank" href="https://github.com/angelanetzke/PathFinder">Java project</a></h4>
 	</div>
